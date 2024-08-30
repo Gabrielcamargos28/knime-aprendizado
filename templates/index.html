@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar Dados para Previsão de Empréstimo</title>
+</head>
+<body>
+    <h1>Previsão de Aprovação de Empréstimo</h1>
+    <form method="post">
+        Gender (1: Male, 0: Female): <input type="number" name="gender" min="0" max="1"><br>
+        Married (1: Yes, 0: No): <input type="number" name="married" min="0" max="1"><br>
+        Dependents: <input type="number" name="dependents" min="0"><br>
+        Education (1: Graduate, 0: Not Graduate): <input type="number" name="education" min="0" max="1"><br>
+        Self Employed (1: Yes, 0: No): <input type="number" name="self_employed" min="0" max="1"><br>
+        Applicant Income: <input type="number" name="applicant_income" step="any"><br>
+        <!--Coapplicant Income: <input type="number" name="coapplicant_income" step="0.01"><br>-->
+        valor do empréstimo Loan Amount: <input type="number" name="loan_amount" step="0.01"><br>
+        prazo do valor do empréstimo Loan Amount Term (in months): <input type="number" name="loan_amount_term"><br>
+        Credit History (1: Good, 0: Bad/None): <input type="number" name="credit_history" min="0" max="1"><br>
+        Property Area (2: Urban, 1: Rural, 0: Semiurban): <input type="number" name="property_area" min="0" max="2"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
